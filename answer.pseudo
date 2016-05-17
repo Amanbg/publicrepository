@@ -1,0 +1,7 @@
+from random import randint
+# randint is library which returns random integer N such as a<=N<=b
+def getname(name):
+	return (True, name, randint(6,15)) # returns a tuple
+name1 = raw_input()  # take name as string
+succeeded ,name2, randno = getname(name1) #unpack values
+print name2, randno
